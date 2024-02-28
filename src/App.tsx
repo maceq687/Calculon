@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [state, setState] = useState("");
 
-  const updateHandle = (event) => {
+  const updateHandle = (event: React.ChangeEvent<HTMLInputElement>) => {
     setState(event.target.value);
   };
 
