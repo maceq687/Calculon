@@ -44,7 +44,7 @@ function App() {
   };
 
   function calculate() {
-    setState((prevState) => eval(prevState));
+    setState((prevState) => eval(prevState).toString());
   }
 
   return (
