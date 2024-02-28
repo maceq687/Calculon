@@ -1,3 +1,5 @@
+import "./CalcButton.css";
+
 type Props = {
   value: string;
   addToFormula: (event: React.MouseEvent<HTMLElement>, value: string) => void;

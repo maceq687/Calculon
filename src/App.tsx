@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <div className="card">
-        <input type="text" value={state} onChange={updateHandle} />
+        <input type="text" value={state} onChange={updateHandle} autoFocus/>
         <br />
         <CalcButton addToFormula={addToFormula} value="7" />
         <CalcButton addToFormula={addToFormula} value="8" />
