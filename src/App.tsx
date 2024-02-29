@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import CalcButton from "./components/CalcButton";
 
-const re = /^-?(0|[1-9]\d*)(\.\d*)?([+\-*/]((0|[1-9]\d*)(\.\d*)?)?)*$/;
+const re =
+  /^-?(0|[1-9]\d*)(\.\d*)?([+\-*/](?!([+\-*/]))((0|[1-9]\d*)(\.\d*)?)?)*$/;
 const buttons: readonly string[] = [
   "7",
   "8",
