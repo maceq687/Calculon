@@ -2,18 +2,13 @@ import "./CalcButton.css";
 
 type Props = {
   value: string;
-  addToFormula: (event: React.MouseEvent<HTMLElement>, value: string) => void;
-  calculate: (event: React.MouseEvent<HTMLElement>) => void;
+  processValue: (value: string) => void;
 };
 
-function CalcButton({ value, addToFormula, calculate }: Props) {
+function CalcButton({ value, processValue }: Props) {
   return (
     <>
-      {value === "=" ? (
-        <button onClick={calculate}>{value}</button>
-      ) : (
-        <button onClick={(event) => addToFormula(event, value)}>{value}</button>
-      )}
+      <button onClick={() => processValue(value)}>{value}</button>
     </>
   );
 }
