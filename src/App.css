@@ -13,3 +13,10 @@ input {
   margin: 0.6em;
   padding: 0.6em 1.2em;
 }
+
+.flex-container {
+  width: 236px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
